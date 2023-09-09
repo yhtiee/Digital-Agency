@@ -1,6 +1,9 @@
+"use client"
+import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+
 
 const Footer = () => {
 
@@ -9,8 +12,12 @@ const Footer = () => {
   ]
 
   return (
-    <section className='w-[100%] flex flex-col md:flex-row mt-[100px]'>
-        <article className='px-[30px] bg-white w-[100%] md:w-[60%] py-[20px]'>
+    <section className='w-[100%] flex flex-col md:flex-row mt-[100px] overflow-hidden'>
+        <motion.article 
+        initial={{x:-200, opacity:0}}
+        whileInView={{x:0, opacity:1}}
+        transition={{duration:0.8}}
+        className='px-[30px] bg-white w-[100%] md:w-[60%] py-[20px]'>
           <h2 className=' font-poppins font-bold text-[24px] md:text-[32px]'>Contact Us</h2>
             <form action="" className='border w-[100%] border-[#159EDD] rounded-xl p-4 grid grid-cols-1 gap-[24px] justify-center items-center'>
               <div className='flex flex-col gap-[8px]'>
@@ -35,8 +42,12 @@ const Footer = () => {
                 </button>
               </div>
             </form>
-        </article>
-        <article className='px-[30px] bg-[#000000] w-[100%] md:w-[40%] flex flex-col justify-center items-center gap-[64px] py-[30px] md:pyy-[0px]'>
+        </motion.article>
+        <motion.article 
+        initial={{x:200, opacity:0}}
+        whileInView={{x:0, opacity:1}}
+        transition={{duration:0.8}}
+        className='px-[30px] bg-[#000000] w-[100%] md:w-[40%] flex flex-col justify-center items-center gap-[64px] py-[30px] md:pyy-[0px]'>
             <div className='flex flex-col gap-[1.5rem]'>
               <Link className=' text-white font-poppins font-semibold text-center' href="#">
                 Support & FAQs
@@ -65,7 +76,7 @@ const Footer = () => {
               <p className=' font-poppins font-medium text-white text-center'>© 2012 - 2023 DigitalWakaa. All Rights Reserved.</p>
               <p className=' font-poppins font-medium text-white text-center'>Our Privacy and Cookie Policies and Terms</p>
             </div>
-        </article>
+        </motion.article>
     </section>
   )
 }

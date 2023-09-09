@@ -1,6 +1,9 @@
+"use client"
+import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+
 
 const NavBar = () => {
   return (
@@ -14,12 +17,16 @@ const NavBar = () => {
             <Link href="#" className='text-black font-poppins'>About</Link>
         </article>
         <article className='hidden md:flex flex-row gap-[2rem]'>
-            <button className='w-[100px] rounded-2xl bg-[#2faf3a] px-3 py-2'>
+            <motion.button 
+            whileHover={{scale:1.1}}
+            className='w-[100px] rounded-2xl bg-[#2faf3a] px-3 py-2'>
                 <p className='text-white font-poppins'>Login</p>
-            </button>
-            <button className='w-[100px] rounded-2xl border border-[#2faf3a] bg-white px-3 py-2'>
+            </motion.button>
+            <motion.button 
+            whileHover={{scale:1.1}}
+            className='w-[100px] rounded-2xl border border-[#2faf3a] bg-white px-3 py-2'>
                 <p className='text-[#2faf3a] font-poppins'>Signup</p>
-            </button>
+            </motion.button>
         </article>
         <article className='md:hidden'>
             <Image src="/hamburger.png" width={500} height={100} className='w-[100%] h-[45px]' alt='hamburger'/>
