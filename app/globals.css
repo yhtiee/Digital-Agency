@@ -20,3 +20,10 @@ body {
 .service-image{
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+.header-text{
+  background: linear-gradient(to right, #0288D1, white, green);
+  background-clip: border-box  padding-box  content-box  no-clip;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
