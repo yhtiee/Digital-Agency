@@ -24,7 +24,7 @@ const Services = () => {
                     className='relative'>
                     <div className='relative image-overlay '>
                         <Image src={items.img} alt={items.alt} width={500} height={100} className='rounded-xl w-[100%]' />
-                        <p className='absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-white text-xl z-[2] lg:text:2xl  image-text'>{items.text}</p> 
+                        <p className='absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-white text-xl z-[2] lg:text-2xl  image-text'>{items.text}</p> 
                     </div>
                 </motion.div>
             ))}

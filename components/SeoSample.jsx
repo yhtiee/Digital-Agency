@@ -113,8 +113,8 @@ const SeoSample = ({ category }) => {
       >
         {images.map((item, index) => (
           <SwiperSlide key={index}>
-            <article className='rounded-md bg-white p-4 flex flex-col justify-center items-center gap-[0.5rem] h-[200px]'>
-              <Image src={item.img} alt={item.alt} width={200} height={200} className='rounded-full' />
+            <article className='rounded-md bg-white flex flex-col justify-center items-center gap-[0.5rem] h-[200px] w-[300px]'>
+              <Image src={item.img} alt={item.alt} width={300} height={300} className='rounded-md'/>
             </article>
           </SwiperSlide>
         ))}

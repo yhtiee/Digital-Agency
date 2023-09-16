@@ -5,7 +5,7 @@ import SeoSample from './SeoSample';
 import { motion } from 'framer-motion';
 
 const Proof = () => {
-  const [selectedCategory, setSelectedCategory] = useState('SEO & PPC'); // Default category
+  const [selectedCategory, setSelectedCategory] = useState('SEO & PPC'); 
 
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
