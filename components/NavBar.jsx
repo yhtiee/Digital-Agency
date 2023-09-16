@@ -7,11 +7,11 @@ import React from 'react'
 
 const NavBar = () => {
   return (
-    <nav className='w-[100%] fixed bg-transparent flex flex-row items-center justify-between pr-[2rem] bg-white h-[75px] z-20'>
+    <nav className='w-[100%] sticky top-0 z-50  bg-transparent flex flex-row items-center justify-between pr-[2rem] bg-whitesmoke h-[75px] navbar'>
         <Link href="/" className=''>
            <Image src="/DIGIlogo.svg" width={50} height={50} className='w-[100%] h-[120px]' alt='logo'/>
         </Link>
-        <article className='hidden md:flex flex-row gap-[2rem]'>
+        <article className='hidden md:flex flex-row gap-[6rem]'>
             <Link href="#" className='text-black font-poppins'>Services</Link>
             <Link href="#" className='text-black font-poppins'>Blog</Link>
             <Link href="#" className='text-black font-poppins'>About</Link>

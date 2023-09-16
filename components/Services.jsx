@@ -3,7 +3,6 @@ import services from '@/constants/services'
 import React from 'react'
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import "./index.css"
 
 
 const Services = () => {
