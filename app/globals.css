@@ -45,3 +45,6 @@ body {
   background-color: whitesmoke;
 }
 
+.bd{
+  border: 3px solid black;
+}

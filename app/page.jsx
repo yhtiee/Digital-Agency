@@ -3,7 +3,7 @@ import Offer from '@/components/Offer'
 import Proof from '@/components/Proof'
 import Services from '@/components/Services'
 import Image from 'next/image'
-import Login from './login/page'
+
 
 export default function Home() {
   return (
@@ -12,9 +12,6 @@ export default function Home() {
       <Services/>
       <Proof/>
       <Offer/>
-
-
-     <Login/>
     </section>
   )
 }

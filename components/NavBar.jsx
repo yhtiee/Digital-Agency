@@ -20,12 +20,12 @@ const NavBar = () => {
             <motion.button 
             whileHover={{scale:1.1}}
             className='w-[100px] rounded-2xl bg-[#2faf3a] px-3 py-2'>
-                <p className='text-white font-poppins'>Login</p>
+                <a className='text-white font-poppins' href='/login'>Login</a>
             </motion.button>
             <motion.button 
             whileHover={{scale:1.1}}
             className='w-[100px] rounded-2xl border border-[#2faf3a] bg-white px-3 py-2'>
-                <p className='text-[#2faf3a] font-poppins'>Signup</p>
+               <a href='/signup' className='text-[#2faf3a] font-poppins'>Signup</a>
             </motion.button>
         </article>
         <article className='md:hidden'>
