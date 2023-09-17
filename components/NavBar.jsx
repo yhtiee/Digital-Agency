@@ -14,7 +14,7 @@ const NavBar = () => {
         <article className='hidden md:flex flex-row gap-[6rem]'>
             <Link href="#" className='text-black font-poppins'>Services</Link>
             <Link href="#" className='text-black font-poppins'>Blog</Link>
-            <Link href="#" className='text-black font-poppins'>About</Link>
+            <Link href="/about" className='text-black font-poppins'>About</Link>
         </article>
         <article className='hidden md:flex flex-row gap-[2rem]'>
             <motion.button 

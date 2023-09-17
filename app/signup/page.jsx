@@ -6,13 +6,13 @@ import React from 'react'
 
 const Signup = () => {
 return(
-  <section className='w-[100%] md:bg-[#EDEDED] md:h-[97vh] md:pt-4'>
+  <section className='w-[100%] md:bg-[#EDEDED] md:py-6 md:pb-16'>
         <motion.article 
         initial={{x:-200, opacity:0}}
         whileInView={{x:0, opacity:1}}
         transition={{duration:0.8}}
         className='px-[30px] bg-white w-[100%] md:w-[95%] md:m-auto md:bg-[#EDEDED]'>
-            <form action="" className='w-[100%] md:h-[87vh] rounded-3xl md:w-[80%] md:m-auto px-4 justify-center items-center md:bg-[#fff]  md:px-40 py-5'>
+            <form action="" className='w-[100%] rounded-3xl md:w-[80%] md:m-auto px-4 justify-center items-center md:bg-[#fff]  md:px-40 py-5'>
             <h2 className=' font-poppins font-bold text-[24px] md:text-[32px] md:mt-6 text-center'>Create Account</h2>
 
               <div className='flex flex-col gap-[8px] mt-4 md:mt-8 pt-2'>

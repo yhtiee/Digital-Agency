@@ -4,7 +4,7 @@ import React from "react";
 
 const Signup = () => {
   return (
-    <section className="w-[100%] md:bg-[#EDEDED] md:h-[97vh] md:pt-24">
+    <section className="w-[100%] md:bg-[#EDEDED] md:py-24" >
       <motion.article
         initial={{ x: -200, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
@@ -13,7 +13,7 @@ const Signup = () => {
       >
         <form
           action=""
-          className="w-[100%] md:h-[65vh] rounded-3xl md:w-[80%] md:m-auto px-4 justify-center items-center md:bg-[#fff]  md:px-40 py-5"
+          className="w-[100%] rounded-3xl md:w-[80%] md:m-auto px-4 justify-center items-center md:bg-[#fff] md:mb-20  md:px-40 py-5"
         >
           <h2 className=" font-poppins font-bold text-[24px] md:text-[32px] md:mt-6 text-center">
             Login
