@@ -13,7 +13,7 @@ const About = () => {
         className="flex flex-col gap-[2rem]"
       >
         <article className="w-[85%] m-auto bg-white rounded-2xl">
-          <div className="about h-[40vh] rounded-xl flex flex-col justify-center items-center">
+          <div className="about h-[40vh] rounded-xl flex flex-col md:justify-center md:items-center">
             <h2 className="header-text text-center font-poppins font-bold text-[45px] md:text-[84px] ">
               About us
             </h2>
@@ -24,7 +24,7 @@ const About = () => {
 
           <article className="flex flex-col px-3 md:flex md:flex-row md:px-12 md:justify-between">
             
-              <div className="w-[45%] md:pt-8">
+              <div className="md:w-[45%] md:pt-8">
                 <h2 className="pt-6 font-poppins text-3xl ">
                   About our company
                 </h2>
