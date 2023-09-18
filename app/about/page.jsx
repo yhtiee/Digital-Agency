@@ -13,7 +13,7 @@ const About = () => {
         className="flex flex-col gap-[2rem]"
       >
         <article className="w-[85%] m-auto bg-white rounded-2xl">
-          <div className="about h-[40vh] rounded-xl flex flex-col md:justify-center md:items-center">
+          <div className="about h-[40vh] rounded-xl flex flex-col justify-center items-center">
             <h2 className="header-text text-center font-poppins font-bold text-[45px] md:text-[84px] ">
               About us
             </h2>
