@@ -34,7 +34,7 @@ const Footer = () => {
               </div>
               <div className='flex flex-col gap-[8px]'>
                 <label className=' font-poppins'>Message</label>
-                <textarea type="text" className="w-[100%] h-[210px] pl-4 pr-[140px] pt-3 pb-[177px] bg-white rounded-lg border border-[#159EDD] justify-start items-center inline-flex font-poppins text-black" placeholder='Enter Message'/>
+                <textarea type="text" className="w-[100%] h-[210px] resize-none pl-4 pr-[140px] pt-3 pb-[177px] bg-white rounded-lg border border-[#159EDD] justify-start items-center inline-flex font-poppins text-black" placeholder='Enter Message'/>
               </div>
               <div className='w-[100%] flex justify-center items-center'>
                 <button className='rounded-2xl w-[80%] border border-[#159EDD] bg-[#159EDD] px-3 py-2'>
