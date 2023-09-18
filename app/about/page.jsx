@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <section className="w-[100%] md:bg-[#EDEDED] py-10 ">
+    <section className="w-[100%] md:bg-[#EDEDED] py-10 md:mb-10">
       <motion.article
         initial={{ y: -50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -41,12 +41,18 @@ const About = () => {
               </div>
 
               <div className="pt-4 md:w-[40%]">
-                <Image
+
+                <motion.div 
+                animate={{y:[0, -10, 0]}}
+                transition={{duration:3, repeat:Infinity}}>
+                     <Image
                   src="/images/aboutOne.jpg"
                   width={380}
                   height={100}
                   alt="image showing things about our company"
                 />
+                </motion.div>
+               
               </div>
            
           </article>
@@ -66,12 +72,18 @@ const About = () => {
               </p>
             </div>
             <div className="pt-4 md:w-[45%] md:flex md:items-end md:justify-end">
-              <Image
+            <motion.div 
+                        animate={{y:[0, -10, 0]}}
+                        transition={{duration:3, repeat:Infinity}}
+            >
+                  <Image
                 src="/images/aboutTwo.jpg"
                 width={380}
                 height={100}
                 alt="image showing things about our company"
               />
+            </motion.div>
+            
             </div>
             
            
