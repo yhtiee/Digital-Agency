@@ -43,7 +43,7 @@ const About = () => {
               <div className="pt-4 md:w-[40%]">
 
                 <motion.div 
-                animate={{y:[0, -10, 0]}}
+                animate={{y:[0, -12, 0]}}
                 transition={{duration:3, repeat:Infinity}}>
                      <Image
                   src="/images/aboutOne.jpg"
