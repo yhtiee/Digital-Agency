@@ -12,32 +12,32 @@ const Footer = () => {
   ]
 
   return (
-    <section className='w-[100%] flex flex-col md:flex-row mt-[100px] overflow-hidden'>
+    <section className='w-[100%] flex flex-col md:flex-col mt-[100px] overflow-hidden'>
         <motion.article 
         initial={{x:-200, opacity:0}}
         whileInView={{x:0, opacity:1}}
         transition={{duration:0.8}}
         className='px-[30px] bg-white w-[100%] md:w-[60%] py-[20px]'>
           <h2 className=' font-poppins font-bold text-[24px] md:text-[32px]'>Contact Us</h2>
-            <form action="" className='border w-[100%] border-[#159EDD] rounded-xl p-4 grid grid-cols-1 gap-[24px] justify-center items-center'>
+            <form action="" className='border w-[100%] border-[#3faf3a] rounded-xl p-4 grid grid-cols-1 gap-[24px] justify-center items-center'>
               <div className='flex flex-col gap-[8px]'>
                 <label className='font-poppins'>First Name</label>
-                <input type="text" className='border border-[#159EDD] font-poppins rounded-lg p-2 w-[100%]' placeholder='Enter Your First Name'/>
+                <input type="text" className='border border-[#3faf3a] font-poppins rounded-lg p-2 w-[100%]' placeholder='Enter Your First Name'/>
               </div>
               <div className='flex flex-col gap-[8px]'>
                 <label className=' font-poppins'>Last Name</label>
-                <input type="text" className='border border-[#159EDD] font-poppins rounded-lg p-2 w-[100%]' placeholder='Enter Your Last Name'/>
+                <input type="text" className='border border-[#3faf3a] font-poppins rounded-lg p-2 w-[100%]' placeholder='Enter Your Last Name'/>
               </div>
               <div className='flex flex-col gap-[8px]'>
               <label className=' font-poppins'>Email</label>
-                <input type="email" className='border border-[#159EDD] font-poppins rounded-lg p-2 w-[100%]' placeholder='Enter Your Mail'/>
+                <input type="email" className='border border-[#3faf3a] font-poppins rounded-lg p-2 w-[100%]' placeholder='Enter Your Mail'/>
               </div>
               <div className='flex flex-col gap-[8px]'>
                 <label className=' font-poppins'>Message</label>
-                <textarea type="text" className="w-[100%] h-[210px] resize-none pl-4 pr-[140px] pt-3 pb-[177px] bg-white rounded-lg border border-[#159EDD] justify-start items-center inline-flex font-poppins text-black" placeholder='Enter Message'/>
+                <textarea type="text" className="w-[100%] h-[210px] resize-none pl-4 pr-[140px] pt-3 pb-[177px] bg-white rounded-lg border border-[#3faf3a] justify-start items-center inline-flex font-poppins text-black" placeholder='Enter Message'/>
               </div>
               <div className='w-[100%] flex justify-center items-center'>
-                <button className='rounded-2xl w-[80%] border border-[#159EDD] bg-[#159EDD] px-3 py-2'>
+                <button className='rounded-2xl w-[80%] border border-[#3faf3a] bg-[#3faf3a] px-3 py-2'>
                   <p className='text-white font-poppins'>Submit</p>
                 </button>
               </div>
