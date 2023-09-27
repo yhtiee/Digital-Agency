@@ -12,7 +12,7 @@ const Footer = () => {
   ]
 
   return (
-    <section className='w-[100%] flex flex-col md:flex-col mt-[100px] overflow-hidden'>
+    <section className='w-[100%] flex flex-col md:flex-row mt-[100px] overflow-hidden'>
         <motion.article 
         initial={{x:-200, opacity:0}}
         whileInView={{x:0, opacity:1}}

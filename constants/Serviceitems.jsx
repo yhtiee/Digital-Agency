@@ -1,13 +1,13 @@
 const ServiceItems = {
-    link:["Blogger outreach", "Niche Edit", 'Infographic Outreach','Multilingual Outreach'],
+    seo:['Local Seo', 'Keyword research', 'Technical Seo', 'Website Audit'],
 
-    digital:['HARO Links', 'Press Distribution', 'Media Placements', 'Content Syndication'],
+    content:['YouTube scripting', 'Blog writing', 'Copywriting', 'Video editing'],
 
-    seo:['Keyword Research','Local Citation Building', 'Blog Content Plan', 'website Audit'],
+    brand:['Social media management', 'Facebook Ads', 'Google Ads', 'Logo and Flyer design'],
 
-    content:['Website Copywriting', 'Press Release Writing', 'Article Writing', 'Press Release Writing'],
+    web:['Wordpress websites', 'Landing page services' , 'Fullstack', 'Website Copywriting'],
 
-    video:['Explainer Video', 'Blog 2 Video', 'Video Ads', 'Infographic Design']
+   
 }
 
 export default ServiceItems

@@ -49,6 +49,7 @@ const NavBar = () => {
       <article className="hidden md:flex flex-row gap-[6rem]">
         <Link
           href="#"
+          
           className="text-black font-poppins"
           onMouseEnter={() => setIsOpen(true)}
         >
@@ -57,6 +58,7 @@ const NavBar = () => {
         <Link
           href="http://blog.digitalwakaa.com/"
           className="text-black font-poppins"
+          target="_blank"
         >
           Blog
         </Link>
@@ -115,10 +117,10 @@ const NavBar = () => {
           className={`hidden absolute left-[15%] top-[75px] bg-[#000] text-white md:flex justify-between items-center w-[65%] p-4 px-16 py-8`}
         >
           <div>
-            <p className="pb-4">LINK BUILDING</p>
+            <p className="md:pb-4">SEO & PPC</p>
 
             <ul className="">
-              {Serviceitems.link.map((item, index) => (
+              {Serviceitems.seo.map((item, index) => (
                 <li key={index} className="pb-2">
                   <Link href="#" className="text-[13px] hover:text-[#3faf3a]">
                     {item}
@@ -129,35 +131,7 @@ const NavBar = () => {
           </div>
 
           <div>
-            <p className="pb-4">DIGITAL PR</p>
-            <ul className="">
-              {Serviceitems.digital.map((item, index) => (
-                <li key={index} className="pb-2">
-                  <Link href="#" className="text-[13px]  hover:text-[#3faf3a]">
-                    {item}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <p className="pb-4">SEO</p>
-
-            <ul className="">
-              {Serviceitems.seo.map((item, index) => (
-                <li key={index} className="pb-2">
-                  <Link href="#" className="text-[13px]  hover:text-[#3faf3a]">
-                    {item}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <p className="pb-4">CONTENT WRITING</p>
-
+            <p className="pb-4">CONTENT DEVELOPMENT</p>
             <ul className="">
               {Serviceitems.content.map((item, index) => (
                 <li key={index} className="pb-2">
@@ -170,10 +144,10 @@ const NavBar = () => {
           </div>
 
           <div>
-            <p className="pb-4">DESIGN & VIDEO</p>
+            <p className="md:pt-2">BRAND DESIGN AND <br/> DEVELOPMENT</p>
 
             <ul className="">
-              {Serviceitems.video.map((item, index) => (
+              {Serviceitems.brand.map((item, index) => (
                 <li key={index} className="pb-2">
                   <Link href="#" className="text-[13px]  hover:text-[#3faf3a]">
                     {item}
@@ -182,6 +156,21 @@ const NavBar = () => {
               ))}
             </ul>
           </div>
+
+          <div>
+            <p className="pb-4">WEB DEVELOPMENT</p>
+
+            <ul className="">
+              {Serviceitems.web.map((item, index) => (
+                <li key={index} className="pb-2">
+                  <Link href="#" className="text-[13px]  hover:text-[#3faf3a]">
+                    {item}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
         </article>
       )}
     </nav>

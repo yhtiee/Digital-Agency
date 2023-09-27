@@ -6,7 +6,7 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth, db } from "./../firebase/firebase";
 import { doc, setDoc } from "@firebase/firestore";
 import { useRouter } from "next/navigation";
-import {  useAuth } from "../context/AuthContext";
+
 
 const Signup = () => {
   const [signup, setSignup] = useState({
@@ -21,7 +21,7 @@ const Signup = () => {
 
   const router = useRouter();
 
-  const { signOut } = useAuth()
+ 
 
   const handleChange = (e) => {
     setSignup({
@@ -55,7 +55,10 @@ const Signup = () => {
       setIsLoading(false);
       router.push("/login");
     } catch (error) {
-      console.log(error);
+      alert(error);
+      // alert("Registration unsuccesful");
+      setIsLoading(false);
+      e.target.reset();
     }
   };
 

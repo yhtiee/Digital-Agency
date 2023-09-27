@@ -1,4 +1,4 @@
-'use client'
+
 import NavBar from "@/components/NavBar";
 import "./globals.css";
 import { Inter } from "next/font/google";
@@ -8,10 +8,10 @@ import { AuthContextProvider } from "./context/AuthContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
-// export const metadata = {
-//   title: "Digital Wakaa",
-//   description: "Digital Agency Platform",
-// };
+export const metadata = {
+  title: "Digital Wakaa",
+  description: "Digital Agency Platform",
+};
 
 export default function RootLayout({ children }) {
 

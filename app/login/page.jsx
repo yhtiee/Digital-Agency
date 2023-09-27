@@ -29,9 +29,6 @@ const Login = () => {
     })
   }
 
-  
-
-
 
 const handleLogin = async(e) => {
   try{
@@ -52,23 +49,23 @@ const handleLogin = async(e) => {
       // console.log("User data from Firestore", userData);
       alert("User logged in successfully");
       e.target.reset();
-      // update(userData);
       localStorage.setItem('userData', JSON.stringify(userData));
       updateLoginTime();
+      router.push("/dashboard")
       setIsLoading(false)
-    router.push("/dashboard")
+  
 
      
     } else {
       alert("User data not found");
+      setIsLoading(false)
     }
-
-   
-
 
   }
   catch(error){
-    console.log(error)
+    alert("Unable to connect, try again");
+    setIsLoading(false)
+
   }
  
 }
