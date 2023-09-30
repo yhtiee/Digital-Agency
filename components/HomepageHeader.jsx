@@ -37,9 +37,9 @@ const HomepageHeader = () => {
         <motion.button 
             whileHover={{scale:1.1}}
 
-            className='fixed bottom-16 left-16 rounded-full bg-green-500 p-4'>
+            className='fixed bottom-16 left-16 rounded-full bg-green-500 p-4 z-[3]'>
             {/* Placeholder WhatsApp Icon */}
-            <a className='text-white text-xl' href={whatsAppLink}>
+            <a className='text-white text-xl z-[1000]' href={whatsAppLink}>
            <Image src="/testImage/iwhatsapp.svg" width={50} height={100} alt='whatsapp'/>
             </a>
         </motion.button>
@@ -47,9 +47,9 @@ const HomepageHeader = () => {
         <motion.button 
             whileHover={{scale:1.1}}
           
-            className='fixed bottom-16 right-16 rounded-full bg-[#3faf3a] p-4 hover:cursor-pointer'>
+            className='fixed bottom-16 right-16 rounded-full bg-[#3faf3a] p-4 hover:cursor-pointer z-[3]'>
             {/* Placeholder Email Icon */}
-            <a href={emailLink}><span className='text-white text-5xl'>✉️</span></a>
+            <a href={emailLink}><span className='text-white text-5xl '>✉️</span></a>
         </motion.button>
 
 
