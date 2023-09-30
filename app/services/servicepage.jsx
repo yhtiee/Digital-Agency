@@ -1,39 +1,24 @@
 'use client';
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Pricing from './pricing';
-// import { db } from '../firebase/firebase';
-// import { collection, getDocs } from 'firebase/firestore';
 
 
-const Services = () => {
 
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     try {
-  //       const querySnapshot = await getDocs(collection(db, "myservices"));
-  //       let dataList = [];
-        
-  //       querySnapshot.forEach((doc) => {
-  //         dataList.push({ ...doc.data()});
-  //       });
-        
+const Servicespage = ({ miniservice }) => {
+  const [name, setName] = useState("");
+  const [description, setDescription] = useState([]);
+  const [whyWeCare, setWhyWeCare] = useState([]);
+  const [howWeDoIt, setHowWeDoIt] = useState([]);
 
-  //       const [servicesData] = dataList;
-
-  //       console.log(servicesData);
-
-
-  //       localStorage.setItem('firestoreData', JSON.stringify(servicesData));
-
-  //     } catch (error) {
-  //       console.error("Error fetching data: ", error);
-  //     }
-  //   };
-
-  //   fetchData();
-  // }, []);
+  useEffect(() => {
+    console.log(miniservice.miniservice[1]);
+    setName(miniservice.miniservice[3].name);
+    setDescription(miniservice.miniservice[0].description);
+    setWhyWeCare(miniservice.miniservice[1].why);
+    setHowWeDoIt(miniservice.miniservice[2].how);
+  }, []);
 
   const why = ["Lorem ipsum dolor sit amet conse.Rhoncus nunc in commodo in. Nec ultrices adipiscing vitae aliquam sagittis. Eu porttitor quis sed turpis at sed. Ac.",
   'Lorem ipsum dolor sit amet conse.Rhoncus nunc in commodo in. Nec ultrices adipiscing vitae aliquam sagittis. Eu porttitor quis sed turpis at sed. Ac.',
@@ -41,8 +26,6 @@ const Services = () => {
   'Lorem ipsum dolor sit amet conse.Rhoncus nunc in commodo in. Nec ultrices adipiscing vitae aliquam sagittis. Eu porttitor quis sed turpis at sed. Ac.',
   'Lorem ipsum dolor sit amet conse.Rhoncus nunc in commodo in. Nec ultrices adipiscing vitae aliquam sagittis. Eu porttitor quis sed turpis at sed. Ac.',
   'Lorem ipsum dolor sit amet conse.Rhoncus nunc in commodo in. Nec ultrices adipiscing vitae aliquam sagittis. Eu porttitor quis sed turpis at sed. Ac.',
-    'Lorem ipsum dolor sit amet conse.Rhoncus nunc in commodo in. Nec ultrices adipiscing vitae aliquam sagittis. Eu porttitor quis sed turpis at sed. Ac.',
-    'Lorem ipsum dolor sit amet conse.Rhoncus nunc in commodo in. Nec ultrices adipiscing vitae aliquam sagittis. Eu porttitor quis sed turpis at sed. Ac.',
   ]
 
   const how = ["Lorem ipsum dolor sit amet conse.Rhoncus nunc in commodo in. Nec ultrices adipiscing vitae aliquam sagittis. Eu porttitor quis sed turpis at sed. Ac.",
@@ -62,10 +45,8 @@ const Services = () => {
           <div className="services p-2 rounded-xl flex flex-col md:flex-row">
             <div className='md:p-8 md:ml-8 text-center md:text-start pt-2'>
               <p className='text-[#149FDA] text-2xl font-medium pt-4 font-poppins'>We are digital wakka</p>
-              <p className='text-white md:pt-8 md:text-[40px] text-3xl pt-4 font-poppins'>Social media management</p>
-              <p className='text-white md:pt-8 md:w-[51%] font-light text-[15px] pt-4 font-poppins'>Lorem ipsum dolor sit amet consectetur.
-                 Rhoncus nunc in commodo in. Nec ultrices 
-                 adipiscing vitae aliquam sagittis. Eu porttitor quis sed turpis at sed. Ac.</p>
+              <p className='text-white md:pt-8 md:text-[40px] text-3xl pt-4 font-poppins'>{name}</p>
+              <p className='text-white md:pt-8 md:w-[51%] font-light text-[15px] pt-4 font-poppins'>{description}</p>
               <button className='font-poppins bg-[#3faf3a] text-white md:mt-10 p-4 px-8 mt-6 mb-6 md:px-12 hover:bg-white hover:text-[#3faf3a] hover:ease-in hover:duration-500'>Get started</button>
             </div>
 
@@ -83,7 +64,7 @@ const Services = () => {
 
           <article className=""> 
             <ul className='pl-4 flex flex-col md:flex md:flex-row md:px-6 md:flex-wrap'>
-              {why.map((item, index) => (
+              {whyWeCare.map((item, index) => (
                 <li key={index} className='md:w-1/3 font-poppins text-[15px] text-[#707070] pt-4 md:px-6 md:pt-8'>
                   <p className='font-poppins md:text-center text-2xl md:text-4xl text-black italic'>0{index +1}.</p>
                   <p className='font-poppins md:text-start md:pt-4 md:leading-[2rem] text-[14px]'>{item}</p>
@@ -94,7 +75,7 @@ const Services = () => {
           <h2 className='text-center text-3xl font-poppins pt-6 md:pt-16'>How we do it.</h2>
           <article className="">
           <ul className='pl-4 flex flex-col md:flex md:flex-row md:px-6 md:flex-wrap'>
-              {how.map((item, index) => (
+              {howWeDoIt.map((item, index) => (
                 <li key={index} className='md:w-1/3 font-poppins text-[15px] text-[#707070] pt-4 md:px-6 md:pt-8'>
                   <p className='font-poppins md:text-center text-2xl md:text-4xl text-black italic'>0{index +1}.</p>
                   <p className='font-poppins md:text-start md:pt-4 md:leading-[2rem] text-[14px]'>{item}</p>
@@ -136,4 +117,4 @@ const Services = () => {
   )
 }
 
-export default Services
+export default Servicespage

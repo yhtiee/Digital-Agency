@@ -122,7 +122,7 @@ const NavBar = () => {
             <ul className="md:pb-7">
               {Serviceitems.seo.map((item, index) => (
                 <li key={index} className="pb-2">
-                  <Link href="#" className="text-[13px] hover:text-[#3faf3a]">
+                  <Link href={`/services/${encodeURIComponent(item)}`} className="text-[13px] hover:text-[#3faf3a]">
                     {item}
                   </Link>
                 </li>
@@ -135,7 +135,7 @@ const NavBar = () => {
             <ul className="">
               {Serviceitems.content.map((item, index) => (
                 <li key={index} className="pb-2">
-                  <Link href="#" className="text-[13px]  hover:text-[#3faf3a]">
+                  <Link href={`/services/${encodeURIComponent(item)}`} className="text-[13px]  hover:text-[#3faf3a]">
                     {item}
                   </Link>
                 </li>
@@ -149,7 +149,7 @@ const NavBar = () => {
             <ul className="">
               {Serviceitems.brand.map((item, index) => (
                 <li key={index} className="pb-2">
-                  <Link href="#" className="text-[13px]  hover:text-[#3faf3a]">
+                  <Link href={`/services/${encodeURIComponent(item)}`} className="text-[13px]  hover:text-[#3faf3a]">
                     {item}
                   </Link>
                 </li>
@@ -163,7 +163,7 @@ const NavBar = () => {
             <ul className="md:pb-7">
               {Serviceitems.web.map((item, index) => (
                 <li key={index} className="pb-2">
-                  <Link href="#" className="text-[13px]  hover:text-[#3faf3a]">
+                  <Link href={`/services/${encodeURIComponent(item)}`} className="text-[13px]  hover:text-[#3faf3a]">
                     {item}
                   </Link>
                 </li>
