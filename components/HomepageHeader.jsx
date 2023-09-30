@@ -1,9 +1,12 @@
 "use client"
 import { motion } from 'framer-motion'
 import React from 'react'
+import Image from 'next/image'
 
 
 const HomepageHeader = () => {
+  const whatsAppLink = "https://wa.me/2348174498769";
+  const emailLink = "mailto:johndoe@gmail.com"
   return (
     <section className='homepage-header h-[100vh] w-[100%] flex justify-center items-center'>
         <motion.article 
@@ -28,6 +31,28 @@ const HomepageHeader = () => {
             </motion.button>
           </div>
         </motion.article>
+
+        {/* buttons */}
+
+        <motion.button 
+            whileHover={{scale:1.1}}
+
+            className='fixed bottom-16 left-16 rounded-full bg-green-500 p-4'>
+            {/* Placeholder WhatsApp Icon */}
+            <a className='text-white text-xl' href={whatsAppLink}>
+           <Image src="/testImage/iwhatsapp.svg" width={50} height={100} alt='whatsapp'/>
+            </a>
+        </motion.button>
+
+        <motion.button 
+            whileHover={{scale:1.1}}
+          
+            className='fixed bottom-16 right-16 rounded-full bg-[#3faf3a] p-4 hover:cursor-pointer'>
+            {/* Placeholder Email Icon */}
+            <a href={emailLink}><span className='text-white text-5xl'>✉️</span></a>
+        </motion.button>
+
+
     </section>
   )
 }

@@ -1,10 +1,8 @@
-
 import NavBar from "@/components/NavBar";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Footer from "@/components/Footer";
 import { AuthContextProvider } from "./context/AuthContext";
-
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,11 +12,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-
   return (
-   
-
-   
     <html lang="en">
       <head>
         <link
@@ -28,6 +22,7 @@ export default function RootLayout({ children }) {
           sizes="<generated>"
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"></link>
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
@@ -39,15 +34,13 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className={inter.className}>
-      <AuthContextProvider>
-      <NavBar />
+        <AuthContextProvider>
+          <NavBar />
           {children}
-    
-      </AuthContextProvider>
-        
+        </AuthContextProvider>
+
         <Footer />
       </body>
     </html>
-   
   );
 }
