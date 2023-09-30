@@ -119,7 +119,7 @@ const NavBar = () => {
           <div>
             <p className="md:pb-4">SEO & PPC</p>
 
-            <ul className="">
+            <ul className="md:pb-7">
               {Serviceitems.seo.map((item, index) => (
                 <li key={index} className="pb-2">
                   <Link href="#" className="text-[13px] hover:text-[#3faf3a]">
@@ -160,7 +160,7 @@ const NavBar = () => {
           <div>
             <p className="pb-4">WEB DEVELOPMENT</p>
 
-            <ul className="">
+            <ul className="md:pb-7">
               {Serviceitems.web.map((item, index) => (
                 <li key={index} className="pb-2">
                   <Link href="#" className="text-[13px]  hover:text-[#3faf3a]">
