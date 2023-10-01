@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 
+;
 const Services = () => {
   return (
     <section className='w-[100%] px-[30px] mt-[100px] flex flex-col gap-[2rem]'>
@@ -23,7 +24,12 @@ const Services = () => {
                     className='relative'>
                     <div className='relative image-overlay '>
                         <Image src={items.img} alt={items.alt} width={500} height={100} className='rounded-xl w-[100%]' />
-                        <p className='absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-white text-xl z-[2] lg:text-2xl  image-text'>{items.text}</p> 
+
+                        <div className='absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-[2] lg:text-3xl  image-text'>
+                <p className='text-3xl'>{items.service}</p>
+                <p className='text-xl pt-4 leading-[2rem]'>{items.text}</p>
+            </div>
+ 
                     </div>
                 </motion.div>
             ))}
